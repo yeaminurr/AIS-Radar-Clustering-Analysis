@@ -3,6 +3,10 @@ import RadarChart from "react-svg-radar-chart";
 import * as d3 from "d3";
 import "./compareChart.css";
 
+
+//Radar Chart For Cluster Page
+
+
 function Radar_Chart(props) {
     const colors = d3.schemeTableau10;
     const [adjustedData, setAdjustedData] = useState([]);

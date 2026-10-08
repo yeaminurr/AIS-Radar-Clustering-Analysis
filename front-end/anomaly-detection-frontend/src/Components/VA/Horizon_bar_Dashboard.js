@@ -2,6 +2,8 @@ import React, {useEffect, useRef} from "react";
 import * as d3 from "d3";
 import json_data from "./data.json";
 
+//Horizontal Bar For Data Dashboard
+
 const Horizon_Bar = (props) => {
     var count = 0;
     const chartRefbar = useRef(null);

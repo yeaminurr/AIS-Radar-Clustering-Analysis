@@ -305,7 +305,7 @@ const Dashboard = () => {
                                 direction="column"
                                 spacing={2}
                             >
-                            <h5>Number of Vessels by Day (And by Cluster If Selected)</h5>
+                            <h5>Percentage of Vessels (AIS/Radar) in This Cluster</h5>
                             <Stack
                                 direction="row"
                                 spacing={2}

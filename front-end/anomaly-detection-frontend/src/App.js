@@ -65,6 +65,7 @@ function App() {
   const [spatialThresholdVisibility,setspatialThresholdVisibility] = useState(false);
   const temporal_prediction_start = useRef(0);
   const temporal_prediction_end = useRef(0)
+  const haursdorffInput = useRef(.01);
 
       //runs only the first time and fetches data if you want to fetch data on any other time use the deps
   useEffect(() => {
@@ -246,8 +247,10 @@ function App() {
       "confidence":confvalue.current,
       "temporal_prediction":temporal,
       "temporal_prediction_start":temporal_prediction_start.current,
-      "temporal_prediction_end":temporal_prediction_end.current
+      "temporal_prediction_end":temporal_prediction_end.current,
+      "haursdoff":haursdorffInput.current
     })
+    console.log(finaljs.current);
 
 
    // fetch(`http://localhost:5000/api/getdata/mongo/?startDate=${startDatevar}&endDate=${endDatevar}`,{
@@ -665,6 +668,8 @@ function App() {
                totalradarpredicted={totalradarpredicted}
                //setConfvalue = {setconfValue}
                confvalue = {confvalue}
+               haursdorffInput = {haursdorffInput}
+               //setHaursdorffInput = {setHaursdorffInput}
 
 
 
@@ -793,7 +798,7 @@ function App() {
             <h4 style={{textAlign:"center", alignItems:"center"}}>Navigation Helper</h4>
           </Stack>
         <Stack direction="row" spacing={1}  sx={{paddingLeft:"5px",paddingTop:"5px"}}>
-          <i className={"circle"} style = {{backgroundColor:"#5efc83"}}></i>
+          <i className={"circle"} style = {{backgroundColor:"#ffe562"}}></i>
           <p style={{textAlign:"left", fontSize:"12px", fontWeight:"bold", paddingRight:"5px"}}>Current Vessel Position : AIS </p>
 
         </Stack>

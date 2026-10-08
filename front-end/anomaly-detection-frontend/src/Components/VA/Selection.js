@@ -1,5 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
+
+//Scatter Plot for Cluster page
+
+
 function Selection(props){
     const selectionRef = useRef();
     const svg = useRef();

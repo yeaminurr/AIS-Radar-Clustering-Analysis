@@ -1,5 +1,9 @@
 import React, {useEffect, useRef} from "react";
 import * as d3 from "d3";
+
+
+//Line Bar For Data Dashboard
+
 const Line_Bar = props => {
     var count = 0;
     const chartRefNbar = useRef(null);

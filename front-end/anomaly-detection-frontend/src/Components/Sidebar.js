@@ -219,6 +219,7 @@ const Sidebar = (props) => {
 
 
                                                         <Input
+                                                            onChange={(event)=>{props.haursdorffInput.current=parseFloat(event.target.value)}}
                                                             id="input-with-icon-adornment"
                                                             startAdornment={
                                                                 <InputAdornment position="start">

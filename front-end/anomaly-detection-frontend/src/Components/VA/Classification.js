@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
 import {Container, LinearProgress} from "@mui/material";
-
+//Bar Chart for Classification
 
 const Classification = (props) =>{
     const [showPrediction, setShowPrediction] = useState(false);
